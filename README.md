@@ -1,4 +1,3 @@
-Here's a README file template you can create for your GitHub repository based on the provided code:
 
 ---
 
