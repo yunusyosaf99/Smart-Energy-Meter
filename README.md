@@ -48,7 +48,8 @@ Before uploading the firmware, ensure that you have configured the following par
 
 ## Contributing
 
-Contributions are welcome! Please fork this repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
+Author Engr Abrar Ali Shah, Younas Khan
+The contribution is only allowed to the GreenWend Energy Team.
 
 ## License
 
