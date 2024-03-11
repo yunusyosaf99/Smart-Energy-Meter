@@ -1,0 +1,56 @@
+______STEPS_____TO_____BE____FOLLOW__
+
+Start
+|
+|
+|
+|
+ 1 --------INSTALL PYTHON SETUP setup python environment----
+|
+|
+ 2 Install -------- ESP32 LIBRARIES------------
+       |
+       |_______ HTTPUpdate.h
+|
+|
+ 3 -------- PYTHON WEB FLASK APP LIBRARIES------------
+       |
+       |________ pip install firebase-admin
+       |________ pip install flask
+       |________ pip install PyGithub
+
+DONE____________________________//
+
+-------//------PLEASE NOTE-------//---------
+
+if HTTPUpdate.h already exist modify its header and cpp file
+
+add the following functions and var// or you can replace the library by moving HTTUpdate folder to Arduino IDE Library directory
+
+C++ File
+----------HTTPUpdate.cpp------------
+
+bool getstatus = false;
+
+bool HTTPUpdate::OnUpdate(void)
+{
+    return getstatus;
+}
+
+Header File
+----------HTTPUpdate.h--------------
+
+extern bool getstatus = false;
+
+// use this as globale variable
+
+
+in the following statement modify like this
+
+ if(_rebootOnUpdate && !spiffs) 
+{
+    Serial.println("Update Finished");
+    getstatus = true;
+}
+
+
